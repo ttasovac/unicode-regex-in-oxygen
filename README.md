@@ -3,7 +3,7 @@
 Unicode groups assigned character points to blocks and scripts:
 
 - The regular expression `\p{Cyrillic}+` should match characters that are assigned to the Cyrillic script. Some regex flavors require the `\p{IsCyrillic}+` notation. The Cyrillic _script_ should match all the Cyrillic _blocks_.
-- `\p{InCyrillic}+`, `\p{InCyrillicExtended-A}`, `\p{InCyrillicExtended-B}` should each match the corresponding Cyrillic block.
+- `\p{InCyrillic}+`, `\p{InCyrillicExtended-A}+`, `\p{InCyrillicExtended-B}+` should each match the characters in the corresponding Cyrillic blocks.
 
 I'm puzzled by the following inconsistencies in oXygen.
 
