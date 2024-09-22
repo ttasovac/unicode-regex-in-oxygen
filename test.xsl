@@ -14,19 +14,27 @@
         </B>
     </xsl:template>
     
-    <xsl:template match="B[not(matches(., '\p{InCyrillicExtended-A}+'))]">
-        <B>
-            <xsl:text>not matched: </xsl:text>
-            <xsl:value-of select="."/>
-        </B>
-    </xsl:template>
-    
     <xsl:template match="B[not(matches(., '\p{IsCyrillic}+'))]">
         <B>
             <xsl:text>not matched: </xsl:text>
             <xsl:value-of select="."/>
         </B>
     </xsl:template>
+    
+    <!--The following will get Sytnax errors and unknown character category-->
+    <!--<xsl:template match="B[matches(., '\p{InCyrillicExtended-A}+')]">
+        <B>
+            <xsl:text>matched: </xsl:text>
+            <xsl:value-of select="."/>
+        </B>
+    </xsl:template>
+    
+    <xsl:template match="B[not(matches(., '\p{InCyrillicExtended-A}+'))]">
+        <B>
+            <xsl:text>not matched: </xsl:text>
+            <xsl:value-of select="."/>
+        </B>
+    </xsl:template>-->
     
     
     
