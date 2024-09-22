@@ -15,7 +15,7 @@ In oXygen Search, I'm getting the expected results, with `\p{IsCyrillic}+` match
 
 ![](https://i.imgur.com/KzIwOTe.png)
 
-**oXygen search works as expected.**
+*oXygen search works as expected.*
 
 ### XPath matching
 
@@ -23,19 +23,19 @@ In XSLT, `{IsCyrillic}+` will match Cyrillic characters only in the Cyrillic blo
 
 ![](https://i.imgur.com/tPVBbLg.png)
 
-**xPath seems to match the block instead of the script.**
+*xPath seems to match the block instead of the script.*
 
 ## Block matching
 
 ### oXygen search
 
-Works as expected. Blocks are correctly matched.
+*Works as expected. Blocks are correctly matched.*
 
 ![](https://i.imgur.com/023d5GU.png)
 
 ### XPath matching
 
-Block matching doesn't work at all because the character category is not recognized.
+*Block matching doesn't work at all because the character category is not recognized.*
 
 ![](https://i.imgur.com/ii6jRxK.png)
 
